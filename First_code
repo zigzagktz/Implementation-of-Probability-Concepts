@@ -1,0 +1,12 @@
+df <- read.table("project_data.csv", sep=",", header=TRUE)
+colnames(df) <- c("PIP","QUALITY","SPEED","COST")
+q <- length(which(df$QUALITY > 500))
+s <- length(which(df$SPEED < 13))
+c <- length(which(df$COST < 234000))
+count <- sum(q,s,c)
+prob_q <- (q/count)* 100
+prob_s <- (s/count) * 100
+prob_c <- (c/count) * 100
+print( paste("Count is:",q,"Probability of QUALITY:",round(prob_q,)))
+print(paste("Count is:",s,"Probability of SPEED:",round(prob_s)))
+print(paste("Count is:",c,"Probability of COST:",round(prob_c)))

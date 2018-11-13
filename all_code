@@ -1,0 +1,112 @@
+df <- read.table("project_data.csv", sep=",", header=TRUE)
+colnames(df) <- c("PIP","QUALITY","SPEED","COST")
+score <- data.frame(matrix(0,ncol=1,nrow=50))
+colnames(score) <- c("scores")
+for(i in 1:nrow(df)) {
+   if((df$QUALITY[i] < 500) && (df$SPEED[i] >= 13) && (df$COST[i] > 234000)){score$scores[i] <- 1 
+		} 
+			}
+counts<- sum(as.numeric(score$scores), na.rm=TRUE)
+probability <- (counts/50)*100
+print(paste("count is:",counts,"and","probability is:",probability))
+
+a<-which(score$scores==1)
+print(a)
+##
+df <- read.table("project_data.csv", sep=",", header=TRUE)
+colnames(df) <- c("PIP","QUALITY","SPEED","COST")
+score <- data.frame(matrix(0,ncol=1,nrow=50))
+colnames(score) <- c("scores")
+for(i in 1:nrow(df)) {
+   if((df$QUALITY[i] > 500) && (df$SPEED[i] >= 13) && (df$COST[i] > 234000)){score$scores[i] <- 1
+	} 	
+		}
+counts<- sum(as.numeric(score$scores), na.rm=TRUE)
+probability <- (counts/50)*100
+print(paste("count is:",counts,"and","probability is:",probability))
+b<-which(score$scores==1)
+
+##
+df <- read.table("project_data.csv", sep=",", header=TRUE)
+colnames(df) <- c("PIP","QUALITY","SPEED","COST")
+score <- data.frame(matrix(0,ncol=1,nrow=50))
+colnames(score) <- c("scores")
+ for(i in 1:nrow(df)) {
+   if((df$QUALITY[i] < 500) && (df$SPEED[i] < 13) && (df$COST[i] > 234000)){score$scores[i] <- 1
+	} 
+	
+		}
+counts<- sum(as.numeric(score$scores), na.rm=TRUE)
+probability <- (counts/50)*100
+print(paste("count is:",counts,"and","probability is:",probability))
+c<-which(score$scores==1)
+##
+df <- read.table("project_data.csv", sep=",", header=TRUE)
+colnames(df) <- c("PIP","QUALITY","SPEED","COST")
+score <- data.frame(matrix(0,ncol=1,nrow=50))
+colnames(score) <- c("scores")
+for(i in 1:nrow(df)) {
+   if((df$QUALITY[i] < 500) && (df$SPEED[i] >= 13) && (df$COST[i] < 234000)){score$scores[i] <- 1
+	} 	
+		}
+counts<- sum(as.numeric(score$scores), na.rm=TRUE)
+probability <- (counts/50)*100
+print(paste("count is:",counts,"and","probability is:",probability))
+d<-which(score$scores==1)
+##
+df <- read.table("project_data.csv", sep=",", header=TRUE)
+colnames(df) <- c("PIP","QUALITY","SPEED","COST")
+score <- data.frame(matrix(0,ncol=1,nrow=50))
+colnames(score) <- c("scores")
+for(i in 1:nrow(df)) {
+   if((df$QUALITY[i] > 500) && (df$SPEED[i] < 13) && (df$COST[i] > 234000)){score$scores[i] <- 1
+} 
+	
+}
+counts<- sum(as.numeric(score$scores), na.rm=TRUE)
+probability <- (counts/50)*100
+print(paste("count is:",counts,"and","probability is:",probability))
+e<-which(score$scores==1)
+##
+df <- read.table("project_data.csv", sep=",", header=TRUE)
+colnames(df) <- c("PIP","QUALITY","SPEED","COST")
+score <- data.frame(matrix(0,ncol=1,nrow=50))
+colnames(score) <- c("scores")
+for(i in 1:nrow(df)) {
+   if((df$QUALITY[i] > 500) && (df$SPEED[i] >= 13) && (df$COST[i] < 234000)){score$scores[i] <- 1
+} 
+	
+}
+counts<- sum(as.numeric(score$scores), na.rm=TRUE)
+probability <- (counts/50)*100
+print(paste("count is:",counts,"and","probability is:",probability))
+f<-which(score$scores==1)
+##
+df <- read.table("project_data.csv", sep=",", header=TRUE)
+colnames(df) <- c("PIP","QUALITY","SPEED","COST")
+score <- data.frame(matrix(0,ncol=1,nrow=50))
+colnames(score) <- c("scores")
+for(i in 1:nrow(df)) {
+   if((df$QUALITY[i] < 500) && (df$SPEED[i] < 13) && (df$COST[i] < 234000)){score$scores[i] <- 1
+} 
+	
+}
+counts<- sum(as.numeric(score$scores), na.rm=TRUE)
+probability <- (counts/50)*100
+print(paste("count is:",counts,"and","probability is:",probability))
+g<-which(score$scores==1)
+##
+df <- read.table("project_data.csv", sep=",", header=TRUE)
+colnames(df) <- c("PIP","QUALITY","SPEED","COST")
+score <- data.frame(matrix(0,ncol=1,nrow=50))
+colnames(score) <- c("scores")
+for(i in 1:nrow(df)) {
+   if((df$QUALITY[i] > 500) && (df$SPEED[i] < 13) && (df$COST[i] < 234000)){score$scores[i] <- 1
+}
+}
+counts<- sum(as.numeric(score$scores), na.rm=TRUE)
+probability <- (counts/50)*100
+print(paste("count is:",counts,"and","probability is:",probability))
+h<-which(score$scores==1)
+
+
